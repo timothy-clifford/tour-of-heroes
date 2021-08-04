@@ -1,0 +1,19 @@
+<button (click)="goBack()">go back</button>
+
+<div>
+  <ng-container *ngIf="hero">
+    <h2>{{hero.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{hero.id}}</div>
+
+    <app-hero-form [model]="hero"></app-hero-form>
+  </ng-container>
+
+  <ng-container *ngIf="!hero">
+    <h2>New Hero</h2>
+    
+    <app-hero-form></app-hero-form>
+  </ng-container>
+  
+
+  
+</div>
