@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroFormComponent should match a snapshot 1`] = `
+<app-hero-form
+  heroForm={[Function FormGroup]}
+  heroService={[Function Object]}
+  model={[Function Object]}
+  powers={[Function Array]}
+  submitted="false"
+>
+  <div
+    class="container"
+  >
+    <div>
+      <form
+        class="ng-untouched ng-pristine ng-invalid"
+        novalidate=""
+      >
+        <div
+          class="form-group"
+        >
+          <label
+            for="name"
+          >
+            Name
+          </label>
+          <input
+            class="form-control ng-untouched ng-pristine ng-invalid"
+            formcontrolname="name"
+            id="name"
+            name="name"
+            required=""
+            type="text"
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            for="alterEgo"
+          >
+            Side kick
+          </label>
+          <input
+            class="form-control ng-untouched ng-pristine ng-valid"
+            formcontrolname="sideKick"
+            id="sideKick"
+            name="sideKick"
+            type="checkbox"
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            for="alterEgo"
+          >
+            Alter Ego
+          </label>
+          <input
+            class="form-control ng-untouched ng-pristine ng-valid"
+            formcontrolname="alterEgo"
+            id="alterEgo"
+            name="alterEgo"
+            type="text"
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            for="power"
+          >
+            Hero Power
+          </label>
+          <select
+            class="form-control ng-untouched ng-pristine ng-invalid"
+            formcontrolname="power"
+            id="power"
+            name="power"
+            required=""
+          >
+            <option
+              value="Mind Control"
+            >
+              Mind Control
+            </option>
+            <option
+              value="Elemental Control"
+            >
+              Elemental Control
+            </option>
+            <option
+              value="Telekinesis"
+            >
+              Telekinesis
+            </option>
+            <option
+              value="Under Water Control"
+            >
+              Under Water Control
+            </option>
+            <option
+              value="Super Strength"
+            >
+              Super Strength
+            </option>
+            <option
+              value="Super Speed"
+            >
+              Super Speed
+            </option>
+            <option
+              value="Healing"
+            >
+              Healing
+            </option>
+            <option
+              value="Shapeshifting"
+            >
+              Shapeshifting
+            </option>
+            <option
+              value="Invisibility"
+            >
+              Invisibility
+            </option>
+            <option
+              value="Flight"
+            >
+              Flight
+            </option>
+          </select>
+        </div>
+        <div
+          class="actions"
+        >
+          <button
+            class="btn btn-success"
+            type="submit"
+          >
+            Submit
+          </button>
+          <button
+            class="btn btn-default"
+            type="reset"
+          >
+            Reset
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</app-hero-form>
+`;

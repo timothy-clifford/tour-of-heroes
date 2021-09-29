@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterModule } from '@angular/router';
+import { HeroService } from '../hero.service';
 
 import { HeroSearchComponent } from './hero-search.component';
 
@@ -7,8 +9,14 @@ describe('HeroSearchComponent', () => {
   let fixture: ComponentFixture<HeroSearchComponent>;
 
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ HeroSearchComponent ]
+    const heroServiceMock = {
+      searchHeroes: jest.fn()
+    };
+
+    TestBed.configureTestingModule({
+      declarations: [ HeroSearchComponent ],
+      imports: [ RouterModule ],
+      providers: [{ provide: HeroService, useValue: heroServiceMock }]
     })
     .compileComponents();
   });

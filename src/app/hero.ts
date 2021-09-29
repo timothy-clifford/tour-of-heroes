@@ -3,4 +3,5 @@ export interface Hero {
   name: string;
   power: string;
   alterEgo?: string | null;
+  sideKick: boolean;
 }
